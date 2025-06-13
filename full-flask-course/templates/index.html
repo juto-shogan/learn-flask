@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flask App</title>
+</head>
+<body>
+    <h1>hello world!</h1>
+    <!-- <p>Welcome to my Flask app!</p>
+    <p>{{myvalue}}</p>
+    <p>{{result}}</p> -->
+
+    <ul>
+        {% for item in list %}
+            {% if item == 30 %}
+                <li style="columns: red;">{{ item }}</li>
+            {% else %}
+                <li>{{ item }}</li>
+            {% endif %}
+        {% endfor %}
+    </ul>
+</body>
+</html>
